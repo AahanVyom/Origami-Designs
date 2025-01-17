@@ -1,0 +1,160 @@
+/* General Styles */
+body {
+    margin: 0;
+    background-color: #f9f9f9;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #222;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+}
+
+.menu-side {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ccc;
+}
+
+/* Body Image Section */
+.bodyimg {
+    position: relative;
+    width: 100%;
+    height: 450px;
+}
+
+.bodyimg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(70%);
+}
+
+.textInImage {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+}
+
+/* Updated h1 Styling */
+.textInImage h1 {
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    text-align: center;
+}
+
+.textInImage h3 {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+/* Grid Layout */
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 30px;
+    
+}
+
+.origami {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    margin: 15px;
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.origami:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.origami img {
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    transition: transform 0.3s ease;
+}
+
+.origami img:hover {
+    transform: scale(1.1);
+}
+
+.origami h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #222;
+}
+
+/* Styling for Lists inside Origami */
+.origami ul, .origami ol {
+    text-align: left;
+    font-size: 14px;
+    line-height: 1.6;
+    padding-left: 20px;
+    color: #555;
+}
+
+/* Link Styling */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .origami {
+        width: 80%;
+    }
+}
